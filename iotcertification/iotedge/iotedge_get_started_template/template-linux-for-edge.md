@@ -1,12 +1,12 @@
 ---
-platform: {enter the OS name running on edge device}
-device: {enter your device name here}
-language: {enter the language used to you edge device}
+platform: Ubuntu Desktop 18.04 LTS
+device: NEON-1000-MDX
+language: python
 ---
 
 *We highly recommend keeping this document current, and Microsoft reserves a right to remove devices and documents from the Azure IoT Device Catalog if document contains broken URL links, incorrect information etc.*
 
-Run a simple {enter the language used to you edge device} sample on {enter your device name here} device running {enter the OS name running on edge device. Specify distribution or Windows SKU information. Ex: Ubuntu Sever 16.04, Windows 10 IoT Core. Only [Tier 1 OS](https://docs.microsoft.com/en-us/azure/iot-edge/support) is allowed}
+Run a simple python sample on NEON-1000-MDX device running Ubuntu Desktop 18.04 LTS
 ===
 ---
 
@@ -19,19 +19,12 @@ Run a simple {enter the language used to you edge device} sample on {enter your 
 -   [Step 4: Next Steps](#NextSteps)
 -   [Step 5: Troubleshooting](#Step-5-Troubleshooting)
 
-# Instructions for using this template
-
--   Replace the text in {placeholders} with correct values.
--   Delete the lines {{enclosed}} after following the instructions enclosed between them.
--   It is advisable to use external links, wherever possible.
--   Remove this section from final document.
-
 <a name="Introduction"></a>
 # Introduction
 
 **About this document**
 
-This document describes how to connect {enter your device name here} device running {enter the OS name running on edge device} with Azure IoT Edge Runtime pre-installed and Device Management. This multi-step process includes:
+This document describes how to connect NEON-1000-MDX device running Ubuntu Desktop 18.04 LTS with Azure IoT Edge Runtime pre-installed and Device Management. This multi-step process includes:
 
 -   Configuring Azure IoT Hub
 -   Registering your IoT device
@@ -48,13 +41,12 @@ You should have the following items ready before beginning the process:
 -   [Sign up to IOT Hub](https://account.windowsazure.com/signup?offer=ms-azr-0044p)
 -   [Add the Edge Device](https://docs.microsoft.com/en-us/azure/iot-edge/quickstart-linux)
 -   [Add the Edge Modules](https://docs.microsoft.com/en-us/azure/iot-edge/quickstart-linux#deploy-a-module)
--   {enter your device name here} device.
--   {{Please specify if any other software(s) or hardware(s) are required.}}
+-   NEON-1000-MDX device.
 
 <a name="PrepareDevice"></a>
 # Step 2: Prepare your Device
 
--   {{Write down the instructions required to setup, configure and connect your device. Please use external links when possible pointing to your own page with device preparation steps.}}
+-   Install Ubuntu Desktop 18.04 LTS on your device.
 
 <a name="Manual"></a>
 # Step 3: Manual Test for Azure IoT Edge on device
@@ -102,8 +94,6 @@ On the device details page of the Azure, you should see the runtime modules - ed
 
 ## 3.2.1 Firmware Update (Using Microsoft SDK Samples):
 
-Specify the path {{enter the path}} where the firmwareupdate client components are installed.
-
 To run the simulated device application, open a shell or command prompt window and navigate to the **iot-hub/Tutorials/FirmwareUpdate** folder in the Node.js project you downloaded. Then run the following commands:
 
     npm install
@@ -129,8 +119,6 @@ Confirm the IoT hub, Device ID, method name and method payload as below:
 
 
 ## 3.2.2 Reboot (Using Microsoft SDK Samples):
-
-Specify the path {{enter the path}} where the components are installed 
 
 Confirm the IoT hub, Device ID, method name as below:
 
